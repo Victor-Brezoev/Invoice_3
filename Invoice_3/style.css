@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto';
+    font-size:17px;
+    }
+
+header{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+}
+.title-company {
+    display: inline-block;
+    position: relative;
+}
+
+.title-company::before, .title-company::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 100%;
+}
+
+.title-company::before{
+    background: #b7dab7;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+
+.title-company::after{
+    height: 94%;
+    background: white;
+    left: -.1em;
+    right: -.1em;
+    z-index: -1;
+    /* -webkit-box-shadow: 1px 1px 21px 15px #b7dab7;
+    box-shadow: 1px 1px 21px 15px #b7dab7;    */
+}
+
+h1{
+    font-size: 35px;
+}
+
+.c{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.invoice-center{
+    border-spacing: 180px 10px;
+    border-bottom: solid #b7dab7;
+    margin-bottom: 90px;
+}
+th{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.companies{
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-info{
+    padding: 14px 1px; 
+    border-spacing: 43px 2px; 
+    border-top: 14px solid #b7dab7;
+    border-bottom: 14px solid #b7dab7;
+    border-left: 1px solid #b7dab7;
+    border-right: 1px solid #b7dab7;
+    border-radius: 1%;
+    max-width: 388px;
+    word-break: break-all;
+}
+
+.recipient-info{
+    padding: 14px 1px;
+    border-spacing: 43px 2px;
+    border-top: 14px solid #b7dab7;
+    border-bottom: 14px solid #b7dab7;
+    border-left: 1px solid #b7dab7;
+    border-right: 1px solid #b7dab7;
+    border-radius: 1%;
+    max-width: 388px;
+    word-break: break-all;
+}
+
+
+.description{
+    border-spacing: 0;
+    text-align: center;
+    border-top: 14px solid #b7dab7;
+    border-bottom: 14px solid #b7dab7;
+    border-left: 1px solid #b7dab7;
+    border-right: 1px solid #b7dab7;
+    border-radius: 1%;
+    word-break: break-all;
+    width: 100%;
+    margin-top: 110px;
+}
+
+.description tbody td{
+    border: 1px solid #b7dab7;
+}
+
+.description th:nth-child(2){
+    width: 400px;
+    
+}
+
+.description tbody td:first-child{
+    height: 65px;
+}
+
+
+.last-table{
+    height: 190px;
+    width: 70%;
+    border-spacing: 0;
+    text-align: left;
+    border-top: 6px solid #b7dab7;
+    border-bottom: 6px solid #b7dab7;
+    border-left: 1px solid #b7dab7;
+    border-right: 1px solid #b7dab7;
+    border-radius: 1%;
+    word-break: break-all;
+    margin-top: 110px;
+}
+
+hr{
+    margin-top: 110px;
+}
+
+footer{
+    text-align: end;
+    font-size: 12px;
+}
